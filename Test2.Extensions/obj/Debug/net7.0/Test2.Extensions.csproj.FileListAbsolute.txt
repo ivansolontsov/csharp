@@ -1,0 +1,15 @@
+/Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/bin/Debug/net7.0/Test2.Extensions.deps.json
+/Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/bin/Debug/net7.0/Test2.Extensions.dll
+/Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/bin/Debug/net7.0/Test2.Extensions.pdb
+/Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/bin/Debug/net7.0/Test2.dll
+/Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/bin/Debug/net7.0/Test2.pdb
+/Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/obj/Debug/net7.0/Test2.Extensions.csproj.AssemblyReference.cache
+/Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/obj/Debug/net7.0/Test2.Extensions.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/obj/Debug/net7.0/Test2.Extensions.AssemblyInfoInputs.cache
+/Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/obj/Debug/net7.0/Test2.Extensions.AssemblyInfo.cs
+/Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/obj/Debug/net7.0/Test2.Extensions.csproj.CoreCompileInputs.cache
+/Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/obj/Debug/net7.0/Test2.Extensions.csproj.CopyComplete
+/Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/obj/Debug/net7.0/Test2.Extensions.dll
+/Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/obj/Debug/net7.0/refint/Test2.Extensions.dll
+/Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/obj/Debug/net7.0/Test2.Extensions.pdb
+/Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/obj/Debug/net7.0/ref/Test2.Extensions.dll

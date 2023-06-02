@@ -1,0 +1,14 @@
+/Users/ivansoloncov/RiderProjects/Test2/Test2/bin/Debug/net7.0/Test2.deps.json
+/Users/ivansoloncov/RiderProjects/Test2/Test2/bin/Debug/net7.0/Test2.runtimeconfig.json
+/Users/ivansoloncov/RiderProjects/Test2/Test2/bin/Debug/net7.0/Test2.dll
+/Users/ivansoloncov/RiderProjects/Test2/Test2/bin/Debug/net7.0/Test2.pdb
+/Users/ivansoloncov/RiderProjects/Test2/Test2/obj/Debug/net7.0/Test2.csproj.AssemblyReference.cache
+/Users/ivansoloncov/RiderProjects/Test2/Test2/obj/Debug/net7.0/Test2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ivansoloncov/RiderProjects/Test2/Test2/obj/Debug/net7.0/Test2.AssemblyInfoInputs.cache
+/Users/ivansoloncov/RiderProjects/Test2/Test2/obj/Debug/net7.0/Test2.AssemblyInfo.cs
+/Users/ivansoloncov/RiderProjects/Test2/Test2/obj/Debug/net7.0/Test2.csproj.CoreCompileInputs.cache
+/Users/ivansoloncov/RiderProjects/Test2/Test2/obj/Debug/net7.0/Test2.dll
+/Users/ivansoloncov/RiderProjects/Test2/Test2/obj/Debug/net7.0/refint/Test2.dll
+/Users/ivansoloncov/RiderProjects/Test2/Test2/obj/Debug/net7.0/Test2.pdb
+/Users/ivansoloncov/RiderProjects/Test2/Test2/obj/Debug/net7.0/Test2.genruntimeconfig.cache
+/Users/ivansoloncov/RiderProjects/Test2/Test2/obj/Debug/net7.0/ref/Test2.dll

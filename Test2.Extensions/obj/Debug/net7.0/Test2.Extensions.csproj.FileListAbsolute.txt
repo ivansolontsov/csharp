@@ -13,3 +13,9 @@
 /Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/obj/Debug/net7.0/refint/Test2.Extensions.dll
 /Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/obj/Debug/net7.0/Test2.Extensions.pdb
 /Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/obj/Debug/net7.0/ref/Test2.Extensions.dll
+/Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/bin/Debug/net7.0/Microsoft.AspNetCore.Http.Abstractions.dll
+/Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/bin/Debug/net7.0/System.IO.Pipelines.dll
+/Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/bin/Debug/net7.0/Microsoft.Extensions.Features.dll
+/Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/bin/Debug/net7.0/Microsoft.AspNetCore.Http.Features.dll
+/Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/bin/Debug/net7.0/Microsoft.Net.Http.Headers.dll
+/Users/ivansoloncov/RiderProjects/Test2/Test2.Extensions/bin/Debug/net7.0/Microsoft.AspNetCore.Connections.Abstractions.dll

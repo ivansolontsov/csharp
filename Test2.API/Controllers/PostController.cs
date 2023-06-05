@@ -2,12 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Test2.API.ViewModels.Requests;
 using Test2.context;
+using Test2.Extensions.common.helpers;
 using Test2.Extensions.mappers;
 using Test2.models;
 
@@ -15,6 +17,7 @@ namespace Test2.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class PostController : ControllerBase
     {
         private readonly DefaultDbContext _context;
@@ -28,13 +31,12 @@ namespace Test2.API.Controllers
         [Route("CreatePost")]
         public async Task<IActionResult> CreatePost([FromBody] CreatePostRequest request)
         {
-            var isUserExists = await _context.Users.AnyAsync(item => item.Id.ToString() == request.UserId.ToString());
-            if (!isUserExists) return BadRequest("Чтобы создать пост пожалуйста зарегистрируйтесь");
-            
+            var userId = HttpContext.GetCurrentUser();
+            if (userId == Guid.Empty) return Unauthorized();
             var post = new Post()
             {
                 Id = Guid.NewGuid(),
-                UserId = request.UserId,
+                UserId = userId,
                 PostCreatedDate = DateTime.Now.ToString(),
                 PostTitle = request.PostTitle,
                 PostText = request.PostText
@@ -81,8 +83,9 @@ namespace Test2.API.Controllers
         [Route("ModifyPost")]
         public async Task<IActionResult> ModifyPost([FromBody] ModifyPostRequest request)
         {
+            var userId = HttpContext.GetCurrentUser();
             var post = await _context.Posts
-                .FirstOrDefaultAsync(post => post.Id.ToString() == request.PostId.ToString() && post.UserId == request.UserId);
+                .FirstOrDefaultAsync(post => post.Id.ToString() == request.PostId.ToString() && post.UserId == userId);
             if (post == null) return NotFound("Пост не найден");
 
             post.PostText = request.PostText;

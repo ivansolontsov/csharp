@@ -2,17 +2,21 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Test2.API.ViewModels.Requests;
 using Test2.context;
+using Test2.Extensions.common.helpers;
 using Test2.models;
 
 namespace Test2.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class LikeController : ControllerBase
     {
         private readonly DefaultDbContext _context;
@@ -24,16 +28,17 @@ namespace Test2.API.Controllers
         
         [HttpPost]
         [Route("LikePost")]
+        
         public async Task<IActionResult> LikePost([FromBody] LikePostRequest request)
         {
-            var isUserExists = await _context.Users.AnyAsync(user => user.Id.ToString() == request.UserId.ToString());
-            if (!isUserExists) return BadRequest("Зарегистрируйтесь, чтобы оставлять лайки");
+            var userId = HttpContext.GetCurrentUser();
+            if (userId == null) return BadRequest();
             var isPostExists = await _context.Posts.AnyAsync(post => post.Id.ToString() == request.PostId.ToString());
             if (!isPostExists) return NotFound("Пост не найден");
 
             var dbLike = await _context.Likes.FirstOrDefaultAsync(like =>
                 like.PostId.ToString() == request.PostId.ToString() &&
-                like.UserId.ToString() == request.UserId.ToString());
+                like.UserId.ToString() == userId.ToString());
 
             if (dbLike != null)
             {
@@ -46,7 +51,7 @@ namespace Test2.API.Controllers
             {
                 Id = Guid.NewGuid(),
                 PostId = request.PostId,
-                UserId = request.UserId
+                UserId = userId
             };
 
             await _context.Likes.AddAsync(like);

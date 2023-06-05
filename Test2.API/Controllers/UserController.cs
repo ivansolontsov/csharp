@@ -2,12 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Test2.API.ViewModels.Requests;
 using Test2.context;
+using Test2.Extensions.common.consts;
 using Test2.models;
 
 namespace Test2.API.Controllers
@@ -30,17 +33,20 @@ namespace Test2.API.Controllers
         {
             var isUserExists = await _context.Users.AnyAsync(item => item.Email.ToLower() == request.email.ToLower());
             if (isUserExists) return BadRequest("Пользователь с таким Email уже существует");
+            
+            
 
             var user = new User()
             {
                 Id = Guid.NewGuid(),
                 Email = request.email,
                 FirstName = request.FirstName,
-                LastName = request.LastName
+                LastName = request.LastName,
+                SecurityStamp = Guid.NewGuid().ToString()
             };
 
             user.PasswordHash = _userManager.PasswordHasher.HashPassword(user, request.password);
-
+            await _userManager.AddToRoleAsync(user, UserRoles.User);
             await _context.Users.AddAsync(user);
             await _context.SaveChangesAsync();
             return Ok("Пользователь успешно создан");
@@ -48,6 +54,7 @@ namespace Test2.API.Controllers
 
         [HttpGet]
         [Route("GetUserByEmail")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<IActionResult> GetUserByEmail([FromQuery] string email)
         {
             var user = await _context.Users.FirstOrDefaultAsync(item => item.Email.ToLower() == email.ToLower());
@@ -57,6 +64,7 @@ namespace Test2.API.Controllers
 
         [HttpGet]
         [Route("GetUsers")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<IActionResult> GetUsers()
         {
             var usersList = await _context.Users.Include(user => user.CurrentUserFriends).ToListAsync();

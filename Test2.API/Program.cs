@@ -99,4 +99,6 @@ using (var scope = app.Services.CreateScope())
 
 app.MapControllers();
 
+app.UseCors(b => b.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+
 app.Run();

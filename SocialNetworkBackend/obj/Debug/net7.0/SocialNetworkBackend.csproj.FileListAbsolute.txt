@@ -1,0 +1,14 @@
+/Users/ivansoloncov/RiderProjects/Test2/SocialNetworkBackend/bin/Debug/net7.0/SocialNetworkBackend.deps.json
+/Users/ivansoloncov/RiderProjects/Test2/SocialNetworkBackend/bin/Debug/net7.0/SocialNetworkBackend.runtimeconfig.json
+/Users/ivansoloncov/RiderProjects/Test2/SocialNetworkBackend/bin/Debug/net7.0/SocialNetworkBackend.dll
+/Users/ivansoloncov/RiderProjects/Test2/SocialNetworkBackend/bin/Debug/net7.0/SocialNetworkBackend.pdb
+/Users/ivansoloncov/RiderProjects/Test2/SocialNetworkBackend/obj/Debug/net7.0/SocialNetworkBackend.csproj.AssemblyReference.cache
+/Users/ivansoloncov/RiderProjects/Test2/SocialNetworkBackend/obj/Debug/net7.0/SocialNetworkBackend.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ivansoloncov/RiderProjects/Test2/SocialNetworkBackend/obj/Debug/net7.0/SocialNetworkBackend.AssemblyInfoInputs.cache
+/Users/ivansoloncov/RiderProjects/Test2/SocialNetworkBackend/obj/Debug/net7.0/SocialNetworkBackend.AssemblyInfo.cs
+/Users/ivansoloncov/RiderProjects/Test2/SocialNetworkBackend/obj/Debug/net7.0/SocialNetworkBackend.csproj.CoreCompileInputs.cache
+/Users/ivansoloncov/RiderProjects/Test2/SocialNetworkBackend/obj/Debug/net7.0/SocialNetworkBackend.dll
+/Users/ivansoloncov/RiderProjects/Test2/SocialNetworkBackend/obj/Debug/net7.0/refint/SocialNetworkBackend.dll
+/Users/ivansoloncov/RiderProjects/Test2/SocialNetworkBackend/obj/Debug/net7.0/SocialNetworkBackend.pdb
+/Users/ivansoloncov/RiderProjects/Test2/SocialNetworkBackend/obj/Debug/net7.0/SocialNetworkBackend.genruntimeconfig.cache
+/Users/ivansoloncov/RiderProjects/Test2/SocialNetworkBackend/obj/Debug/net7.0/ref/SocialNetworkBackend.dll

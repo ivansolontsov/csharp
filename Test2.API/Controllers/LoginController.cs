@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -32,6 +33,14 @@ namespace Test2.API.Controllers
             _config = config;
             _context = context;
             _userManager = userManager;
+        }
+        
+        [HttpGet]
+        [Route("TestAuth")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public async Task<IActionResult> TestAuth()
+        {
+            return Ok();
         }
 
         [HttpPost]

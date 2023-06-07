@@ -18,6 +18,17 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6771d4a4cce39ed533223dc35ed9620b1989fcc3687851d2e401ac1aa69f6f8/SwaggerUIBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/85444b87515266794f71448c4f4bd6c1bde1cbd93fe1721b9221ae0dd4ebc93/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../FirstProject/Test/Controllers/UsersController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SocialNetwork.API/Controllers/LikeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SocialNetwork.API/Controllers/LoginController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SocialNetwork.API/Controllers/PostController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SocialNetwork.API/Controllers/SocialController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SocialNetwork.API/Controllers/UserController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SocialNetwork.API/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SocialNetwork.API/ViewModels/Requests/AddFriendRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SocialNetwork.API/ViewModels/Requests/LikePostRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SocialNetwork.API/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SocialNetworkBackend/Migrations/20230602062921_init.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SocialNetworkBackend/context/DefaultDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/ivansoloncov/RiderProjects/Test2/Test2.API/ViewModels/Requests/AddFriendRequest.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -90,7 +101,7 @@
       <workItem from="1685686661262" duration="14406000" />
       <workItem from="1685730736472" duration="5277000" />
       <workItem from="1685809127108" duration="1015000" />
-      <workItem from="1685943012477" duration="12634000" />
+      <workItem from="1685943012477" duration="14685000" />
     </task>
     <task id="LOCAL-00001" summary="authorization, login, create">
       <created>1685965707752</created>
@@ -150,7 +161,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Test2.API/Controllers/LoginController.cs</url>
+          <url>file://$PROJECT_DIR$/SocialNetwork.API/Controllers/LoginController.cs</url>
           <line>48</line>
           <properties documentPath="$PROJECT_DIR$/Test2.API/Controllers/LoginController.cs" initialLine="37" containingFunctionPresentation="Method 'Login'">
             <startOffsets>

@@ -8,7 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f21ad2aa-ecd6-4c4a-aeed-273d6dd33efd" name="Changes" comment="test auth fetcher" />
+    <list default="true" id="f21ad2aa-ecd6-4c4a-aeed-273d6dd33efd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Test2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test2/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +103,7 @@
       <workItem from="1685686661262" duration="14406000" />
       <workItem from="1685730736472" duration="5277000" />
       <workItem from="1685809127108" duration="1015000" />
-      <workItem from="1685943012477" duration="14685000" />
+      <workItem from="1685943012477" duration="36341000" />
     </task>
     <task id="LOCAL-00001" summary="authorization, login, create">
       <created>1685965707752</created>
